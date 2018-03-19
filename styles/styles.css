@@ -157,14 +157,14 @@ p.about_text {
   margin: 100px;
 }
 
-li.journal_entry {
+#code_journal li.journal_entry {
   list-style: georgian;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
-
+#code_journal p {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 footer.container {
   border-top: 5px solid #dad7d3;
