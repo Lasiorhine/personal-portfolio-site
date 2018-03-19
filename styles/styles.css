@@ -143,8 +143,6 @@ ul.then {
 
 ul.now {
   grid-row: 2;
-  /* flex_direction:
-  display: flex; */
 }
 
 li.coding {
@@ -158,10 +156,6 @@ p.about_text {
   font-size: 1.5rem;
   margin: 100px;
 }
-
-/* #code_journal strong {
-  font-size: 1.5em;
-} */
 
 li.journal_entry {
   list-style: georgian;
