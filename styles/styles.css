@@ -1,9 +1,16 @@
 
-
-
 img.resize {
   max-width:50%;
   max-height:50%;
+}
+
+body {
+  background-color: #989fc2;
+}
+
+body.container {
+  display: grid;
+  grid-template-columns: 1;
 }
 
 header h2 {
@@ -12,27 +19,44 @@ header h2 {
 }
 
 nav ul.container {
-  border-top: 5px solid #ffcc5c;
-  border-bottom: 5px solid #ffcc5c;
+  border-top: 5px solid #dad7d3;
+  border-bottom: 5px solid #dad7d3;
   display: flex;
   justify-content: flex-end;
 }
 
 nav li.index {
   margin-right: auto;
+  background-color: black;
+}
+
+nav li.about {
+  background-color: #553973;
+}
+
+nav li.journal {
+  background-color: #484595;
+}
+
+nav li.portfolio {
+  background-color: #571a2d;
 }
 
 nav li {
   list-style: none;
-  font-size:30px;
+  font-size:20px;
   padding: 10px;
+}
+
+nav a {
+  color: white;
 }
 
 
 main.container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: block;
+  justify-self: center;
+  justify-items: center;
 }
 
 #cabinet_or_lounge.container {
@@ -42,8 +66,10 @@ main.container {
   grid-template-columns: 9fr 2fr 9fr;
   grid-template-rows: 9fr 1fr 3fr;
   grid-gap: 3px;
-  justify-content: center;
   align-content: center;
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
 }
 
 section.image_with_question {
@@ -89,8 +115,45 @@ strong.or_bars {
   font-size:  20px
 }
 
+
+ul.everything.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 3fr;
+  margin-right: auto;
+}
+
+ul.then li {
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.creative_nonfic li a {
+  display: block;
+}
+
+ul.eveything ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul.then{
+  grid-row: 1;
+}
+
+ul.now{
+  grid-row: 2;
+  /* flex_direction:
+  display: flex; */
+}
+
+
+
 footer.container {
-  border-top: 5px solid gray;
+  border-top: 5px solid #dad7d3;
 }
 
 footer ul.container {
@@ -98,9 +161,19 @@ footer ul.container {
   justify-content: flex-start;
 }
 
+footer a {
+  color: white;
+}
+
 footer li {
   list-style: none;
-  padding: 20px;
-  min-width: 25px;
-  max-width: 45px;
+  display: inline-grid;
+  padding: 15px;
+  border: 2px solid #dad7d3;
+  margin: 20px;
+  color: #d1d3d6
+  font-size: 12px;
+  background-color: #716084;
+  min-width: 45px;
+  max-width: 90px;
 }
