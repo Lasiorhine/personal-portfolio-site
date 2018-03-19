@@ -153,6 +153,7 @@ ul.now {
 
 li.coding {
   font-style: italic;
+  font-size: 1.5em;
 }
 
 p.about_text {
@@ -162,9 +163,23 @@ p.about_text {
   margin: 100px;
 }
 
+/* #code_journal strong {
+  font-size: 1.5em;
+} */
+
+li.journal_entry {
+  list-style: georgian;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
 
 footer.container {
   border-top: 5px solid #dad7d3;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 footer ul.container {
